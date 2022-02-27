@@ -1,0 +1,98 @@
+.cmm-button-demo-container {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+.cmm-button-demo-container > * {
+  margin: 10px 0px;
+}
+
+.cmm-form-demo-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.cmm-form-demo-container > form {
+  margin: 50px 0px;
+}
+
+.cmm-input-demo-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.cmm-input-demo-container > input, .cmm-input-demo-container > div {
+  margin: 3px 0px;
+}
+
+.cmm-search-bar-demo-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.cmm-select-demo-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.cmm-graph-list-option-demo-container {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.cmm-input-group .cmm-align-horizontal-left > * {
+  margin-right: 5px;
+}
+
+.cmm-detail-view-foot {
+  display: flex;
+  justify-content: space-between;
+}
+.cmm-detail-view-foot .cmm-align-horizontal-space .cmm-button {
+  margin-right: 15px;
+}
+.cmm-detail-view-foot .cmm-button-group {
+  max-width: 120px;
+}
+
+.cmm-thumbnail-list-item .cmm-thumbnail {
+  flex: 1;
+}
+.cmm-thumbnail-list-item .graph-info {
+  flex: 3;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.cmm-thumbnail-list-item .graph-info > h5 {
+  margin-bottom: 10px;
+}
+.cmm-thumbnail-list-item .graph-info > p {
+  margin-bottom: 10px;
+}
+.cmm-thumbnail-list-item .graph-info .cmm-button-group {
+  justify-content: flex-end;
+  margin-top: 43px;
+}
+.cmm-thumbnail-list-item .graph-info .cmm-button-group > button {
+  margin-left: 10px;
+}
+
+.cmm-carousel-demo-container > div {
+  margin: 100px 0px;
+}
+
+.example {
+  margin: 80px 0px;
+}
+.example > h5 {
+  margin-bottom: 15px;
+}

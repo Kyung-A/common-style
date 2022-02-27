@@ -1,0 +1,20 @@
+.cmm-panel {
+  width: 100%;
+  margin: 20px 0px 10px 0px;
+  flex-wrap: wrap;
+  .cmm-search-bar {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+.cmm-list-board {
+  text-align: center;
+  .cmm-list-item-column:nth-child(3) {
+    flex: 2;
+  }
+}
+
+.cmm-pagination {
+  margin-top: 50px;
+}

@@ -1,0 +1,340 @@
+// variables
+$inputBorder: 1px solid #ccc;
+$focusColor: #81bef7;
+$errorColor: #f44336;
+$toggleColor: #469ef0;
+$errorColor: #f44336;
+$listHeadBorderColor: #4472c4;
+$listHeadBgColor: #ccd9f0;
+$lightGray: #e2e2e2;
+
+ol,
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+// typograohy style
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url(../fonts/NotoSansCJKkr-Regular.otf);
+}
+
+body,
+html,
+.cmm-typography {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-family: Noto Sans KR;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+
+h1,
+.cmm-typography-h1 {
+  line-height: 1.15;
+  font-size: 2.5rem;
+}
+
+h2,
+.cmm-typography-h2 {
+  line-height: 1.2;
+  font-size: 2.25rem;
+}
+
+h3,
+.cmm-typography-h3 {
+  line-height: 1.2;
+  font-size: 2rem;
+}
+
+h4,
+.cmm-typography-h4 {
+  line-height: 1.25;
+  font-size: 1.75em;
+}
+
+h5,
+.cmm-typography-h5 {
+  line-height: 1.3;
+  font-size: 1.5rem;
+}
+
+h6,
+.cmm-typography-h6 {
+  line-height: 1.6;
+  font-size: 1.25rem;
+}
+
+// input style
+input {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  box-sizing: border-box;
+}
+
+.cmm-input {
+  display: block;
+  width: 100%;
+  height: 33px;
+  padding: 3px 5px;
+  border: $inputBorder;
+  border-radius: 0.25rem;
+  font-size: 13px;
+  box-sizing: border-box;
+  & ::placeholder {
+    font-size: 13px;
+  }
+  &:focus {
+    outline: 0;
+    border: 1px solid $focusColor;
+    box-shadow: 0 0 3px 0 $focusColor;
+  }
+}
+
+.cmm-input-disabled {
+  background-color: rgb(226, 226, 226);
+}
+
+.cmm-textarea {
+  resize: none;
+  height: 100px;
+}
+
+.cmm-input-radio,
+.cmm-input-check {
+  width: 15px;
+  height: 15px;
+  &:focus {
+    outline-color: $focusColor;
+  }
+}
+
+.cmm-input-color:focus {
+  outline: 0;
+  border: 1px solid $focusColor;
+  box-shadow: 0 0 3px 0 $focusColor;
+}
+
+.cmm-input-error {
+  border-color: $errorColor;
+  box-shadow: 0 0 3px 0 $errorColor;
+}
+
+// input group style
+.cmm-input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+// form style
+.cmm-form {
+  width: 100%;
+}
+
+.cmm-form-text {
+  display: block;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.cmm-form-label {
+  width: 100%;
+}
+
+// select style
+.cmm-select {
+  width: 100%;
+  height: 33px;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.cmm-select:focus {
+  outline: 0;
+  border: 1px solid $focusColor;
+  box-shadow: 0 0 3px 0 $focusColor;
+}
+
+// button style
+button {
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.cmm-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px 13px;
+  img {
+    width: 1.5em;
+  }
+}
+
+.cmm-button-create {
+  background-color: #4895e8;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+.cmm-button-editing {
+  background-color: #ffb812;
+  border: 1px solid transparent;
+  color: #000;
+}
+
+.cmm-button-confirm {
+  background-color: #12cc93;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+.cmm-button-cancel {
+  background-color: #fff;
+  border: 1px solid #f44336;
+  color: #f44336;
+}
+
+.cmm-button-delete {
+  background-color: #f44336;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+// button group style
+.cmm-button-group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// tabel style
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.cmm-table-board {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid $lightGray;
+  background-color: #fff;
+}
+
+.cmm-table-board th {
+  padding: 8px;
+  text-align: left;
+  &:first-child {
+    width: 5%;
+  }
+}
+
+.cmm-table-board td {
+  padding: 8px;
+}
+
+.cmm-table-board thead tr {
+  border-top: 1px solid #ccc;
+  &:first-child {
+    border-top: 0;
+  }
+  &:last-child {
+    border-bottom: 2px solid #ccc;
+  }
+}
+
+.cmm-table-board tbody tr {
+  border-bottom: 1px solid $lightGray;
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.cmm-table-board tfoot tr {
+  border-top: 1px solid #ccc;
+  &:first-child {
+    border-top: 2px solid #ccc;
+  }
+}
+
+// thumbnail style
+.cmm-thumbnail {
+  position: relative;
+  z-index: 1;
+  width: 270px;
+  height: 180px;
+  border: 1px solid $lightGray;
+  box-sizing: border-box;
+  > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+  }
+  .cmm-thumbnail-text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    background: transparent\9;
+    background: rgba(0, 0, 0, 0.5);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#6c800000,endColorstr=#6c800000);
+    zoom: 1;
+    color: #fff;
+  }
+}

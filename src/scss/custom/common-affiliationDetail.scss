@@ -1,0 +1,28 @@
+.cmm-w1200 {
+  > h4 {
+    margin-bottom: 30px;
+  }
+}
+
+.cmm-table-board {
+  th:first-child {
+    width: 15%;
+    border-right: 2px solid #e2e2e2;
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+  td {
+    padding: 10px;
+  }
+}
+
+.cmm-button-group {
+  max-width: 120px;
+  margin: 0 auto;
+  margin-top: 50px;
+  .cmm-button-editing {
+    border-color: #4472c4;
+    background-color: #4472c4;
+    color: #fff;
+  }
+}

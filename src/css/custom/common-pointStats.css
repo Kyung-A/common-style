@@ -1,0 +1,44 @@
+.cmm-status-board {
+  margin: 20px 0px;
+}
+.cmm-status-board .cmm-status-board-graph {
+  width: 32%;
+  border: 1px solid #ccc;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.cmm-status-board .cmm-status-board-graph > img {
+  width: 100%;
+}
+
+.cmm-search-bar {
+  max-width: 500px;
+  margin: 20px 0px 10px 0px;
+}
+
+.cmm-table-board th {
+  text-align: center;
+}
+.cmm-table-board thead th:nth-child(2) {
+  width: 20%;
+}
+.cmm-table-board thead th:nth-child(3) {
+  width: 40%;
+}
+.cmm-table-board thead th:nth-child(4),
+.cmm-table-board thead th:nth-child(5),
+.cmm-table-board thead th:nth-child(6) {
+  width: 10%;
+}
+.cmm-table-board tbody td,
+.cmm-table-board tbody th {
+  border-right: 1px solid #e2e2e2;
+}
+.cmm-table-board tbody td:last-child,
+.cmm-table-board tbody th:last-child {
+  border-right: 0;
+}
+
+.cmm-pagination {
+  margin-top: 50px;
+}

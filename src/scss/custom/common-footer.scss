@@ -1,0 +1,66 @@
+/* 푸터 영역 */
+footer.global-footer {
+  width: 100%;
+  border-top: 1px solid #c7c7c7;
+  background-color: #fff;
+  margin-top: auto;
+  box-sizing: border-box;
+}
+.footer-link {
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 0 0 45px;
+  box-sizing: border-box;
+  a {
+    text-decoration: none;
+    color: #282828;
+    font-size: 14.7px;
+  }
+  .bar {
+    color: #cbcbcb;
+    font-family: dotum;
+    padding: 0 14px;
+  }
+  .iTop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    color: #8c8c8c;
+    font-size: 12px;
+    padding: 0 33px 0 12px;
+    line-height: 46px;
+    height: 46px;
+  }
+}
+
+.copyright {
+  width: 100%;
+  border-top: 1px solid #eaeaea;
+  padding: 25px 0;
+  .copyright-bg {
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+    .footer-logo {
+      position: absolute;
+      top: 5px;
+      left: 45px;
+    }
+    .address {
+      color: #646464;
+      font-size: 12px;
+      margin: -5px 0 0;
+      padding: 0 0 0 233px;
+      line-height: 190%;
+      letter-spacing: -0.2px;
+      .gab1 {
+        margin-left: 13px;
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 | 정보입력</title>
+    <link rel="stylesheet" type="text/css" href="../../../src/css/common-element.css">
+    <link rel="stylesheet" type="text/css" href="../../../src/css/common-layout.css">
+    <link rel="stylesheet" type="text/css" href="../../../src/css/common-component.css">
+    <link rel="stylesheet" type="text/css" href="../../../src/css/custom/common-userInfo.css">
+</head>
+
+<body>
+    <main class="cmm-main">
+        <div class="cmm-w1200">
+
+            <div class="user-info-wrapper">
+                <!-- title start -->
+                <div class="sign-up-title">
+                    <h3><strong>회원가입</strong></h3>
+                    <div class="sign-up-step">
+                        <ol class="cmm-align-horizontal-center">
+                            <li>
+                                <span>
+                                    <b>STEP.01</b>약관동의
+                                </span>
+                            </li>
+                            <li class="selected">
+                                <span>
+                                    <b>STEP.02</b>정보입력
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <b> STEP.03</b>가입완료
+                                </span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- title end -->
+
+                <div class="info-content-wrapper cmm-align-vertical-center">
+                    <div class="content-title cmm-align-horizontal-space">
+                        <h6>회원정보 입력</h6>
+                        <p><b>✔</b>은 필수 입력 항목입니다.</p>
+                    </div>
+
+                    <!-- form start -->
+                    <form class="cmm-form">
+                        <label class="cmm-form-label cmm-form-invalid-feedback">
+                            <b>✔</b> 성
+                            <span class="cmm-form-text">성을 입력해주세요.</span>
+                            <input type="text" name="userFamilyName" class="cmm-input cmm-input-text" title="성"
+                                placeholder="성" required />
+                        </label>
+
+                        <label class="cmm-form-label cmm-form-invalid-feedback">
+                            <b>✔</b> 이름
+                            <span class="cmm-form-text">이름을 입력해주세요.</span>
+                            <input type="text" name="userGivenName" class="cmm-input cmm-input-text" title="이름"
+                                placeholder="이름" required />
+                        </label>
+
+                        <label class="cmm-form-label cmm-form-invalid-feedback">
+                            <b>✔</b> 아이디(이메일주소)
+                            <span class="cmm-form-text">이메일 형식에 맞게 입력해주세요.</span>
+                            <input type="text" name="userId" class="cmm-input" value="userId@email"
+                                readonly="readonly" />
+                        </label>
+
+                        <label class="cmm-form-label cmm-form-invalid-feedback">
+                            <b>✔</b> 비밀번호
+                            <span class="cmm-form-text">영문, 숫자, 특수문자 3가지 조합 / 8~16자리</span>
+                            <input type="password" name="userPassword" class="cmm-input cmm-input-password" title="비밀번호"
+                                placeholder="비밀번호 영문, 숫자, 특수문자 3가지 조합 / 8~16자리" required />
+                        </label>
+
+                        <label class="cmm-form-label cmm-form-invalid-feedback">
+                            <b>✔</b> 비밀번호 확인
+                            <span class="cmm-form-text">비밀번호가 일치하지 않습니다</span>
+                            <input type="password" name="userPassword2" class="cmm-input cmm-input-password"
+                                title="비밀번호 확인" placeholder="비밀번호 확인" required />
+                        </label>
+
+                        <label class="cmm-form-label cmm-form-invalid-feedback">
+                            <b>✔</b> 휴대전화
+                            <span class="cmm-form-text" style="display:block">휴대전화 형식에 맞게 입력해주세요</span>
+                            <input type="tel" name="userTel" class="cmm-input cmm-input-tel cmm-input-error" title="휴대폰 번호"
+                                placeholder="휴대폰번호 ex) 01012345678" required />
+                        </label>
+
+                        <label class="cmm-form-label cmm-form-invalid-feedback">
+                            <b>✔</b> 소속기관
+                            <span class="cmm-form-text">소속기관을 입력해주세요.</span>
+                            <input type="text" name="userAffiliation" class="cmm-input cmm-input-text" title="소속기관"
+                                placeholder="소속기관" required />
+                        </label>
+                        
+                        <div class="cmm-input-group">
+                            <label class="cmm-form-label cmm-align-horizontal">
+                                <input type="checkbox" name="checkEmail" class="cmm-input-check" title="이메일 수신" />
+                                이메일 수신
+                            </label>
+                            <label class="cmm-form-label cmm-align-horizontal">
+                                <input type="checkbox" name="checkSns" class="cmm-input-check" title="문자 및 알림 수신 동의" />
+                                문자 및 알림 수신 동의
+                            </label>
+                         </div>
+
+                        <button type="submit" class="cmm-button cmm-signIn cmm-align-vertical-center">회원가입</button>
+                    </form>
+                    <!-- form end -->
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+// demo를위해 작성한 파일입니다
+.cmm-button-demo-container {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  > * {
+    margin: 10px 0px;
+  }
+}
+
+.cmm-form-demo-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  & > form {
+    margin: 50px 0px;
+  }
+}
+
+.cmm-input-demo-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  & > input,
+  & > div {
+    margin: 3px 0px;
+  }
+}
+
+.cmm-search-bar-demo-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.cmm-select-demo-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.cmm-graph-list-option-demo-container {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.cmm-input-group .cmm-align-horizontal-left > * {
+  margin-right: 5px;
+}
+
+// detail view foot 간격 조정
+.cmm-detail-view-foot {
+  display: flex;
+  justify-content: space-between;
+  .cmm-align-horizontal-space {
+    .cmm-button {
+      margin-right: 15px;
+    }
+  }
+  .cmm-button-group {
+    max-width: 120px;
+  }
+}
+
+// thumbnail list width 조정
+.cmm-thumbnail-list-item {
+  .cmm-thumbnail {
+    flex: 1;
+  }
+  .graph-info {
+    flex: 3;
+    padding-left: 10px;
+    box-sizing: border-box;
+    > h5 {
+      margin-bottom: 10px;
+    }
+    > p {
+      margin-bottom: 10px;
+    }
+    .cmm-button-group {
+      justify-content: flex-end;
+      margin-top: 43px;
+      > button {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+// carousel 간격 조정
+.cmm-carousel-demo-container {
+  > div {
+    margin: 100px 0px;
+  }
+}
+
+
+// category 예시 간격 조정
+.example{
+  margin:80px 0px;
+  > h5 {
+    margin-bottom: 15px;
+  }
+}

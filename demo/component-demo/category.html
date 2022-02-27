@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pythagraph | category</title>
+    <link rel="stylesheet" type="text/css" href="../../src/css/common-element.css">
+    <link rel="stylesheet" type="text/css" href="../../src/css/common-component.css">
+    <link rel="stylesheet" type="text/css" href="../../src/css/common-layout.css">
+    <link rel="stylesheet" type="text/css" href="../../src/css/custom/common-demoCustom.css">
+</head>
+
+<body>
+    <main class="cmm-main">
+        <div class="cmm-w1200">
+
+            <h1>카테고리 버튼 한줄당 최대 10개까지 가능</h1>
+
+            <div class="example">
+                <h5>좌:전체 카테고리 우:카테고리 그룹</h5>
+                <!-- category start -->
+                <div class="cmm-category">
+                    <div class="cmm-category-all">
+                        <button class="cmm-button cmm-category-button">전체 카테고리</button>
+                    </div>
+                    <div class="cmm-category-group"></div>
+                </div>
+                <!-- category end -->
+            </div>
+
+            <div class="example">
+                <h5>좌:카테고리 그룹 우:전체 카테고리</h5>
+                <!-- category start -->
+                <div class="cmm-category category-example2">
+                    <div class="cmm-category-group category-group-example2"></div>
+                    <div class="cmm-category-all">
+                        <button class="cmm-button cmm-category-button">전체 카테고리</button>
+                    </div>
+                </div>
+                <!-- category end -->
+            </div>
+
+            <div class="example">
+                <h5>카테고리 그룹 버튼이 한줄일 경우</h5>
+                <!-- category start -->
+                <div class="cmm-category category-example3">
+                    <div class="cmm-category-all">
+                        <button class="cmm-button cmm-category-button">전체 카테고리</button>
+                    </div>
+                    <div class="cmm-category-group category-group-example3"></div>
+                </div>
+                <!-- category end -->
+            </div>
+
+            <div class="example">
+                <h5>카테고리 그룹 버튼이 한개일 경우
+                    <small>좌:전체 카테고리 우:카테고리 그룹</small>
+                </h5>
+                <!-- category start -->
+                <div class="cmm-category category-example4">
+                    <div class="cmm-category-all">
+                        <button class="cmm-button cmm-category-button">전체 카테고리</button>
+                    </div>
+                    <div class="cmm-category-group category-group-example4"></div>
+                </div>
+                <!-- category end -->
+            </div>
+
+            <div class="example">
+                <h5>카테고리 그룹 버튼이 한개일 경우
+                    <small>좌:카테고리 그룹 우:전체 카테고리</small>
+                </h5>
+                
+                <!-- category start -->
+                <div class="cmm-category category-example5">
+                    <div class="cmm-category-group category-group-example5"></div>
+                    <div class="cmm-category-all">
+                        <button class="cmm-button cmm-category-button">전체 카테고리</button>
+                    </div>
+                </div>
+                <!-- category end -->
+            </div>
+
+            <div class="example">
+                <h5>카테고리 그룹 버튼이 많을 경우</h5>
+                <!-- category start -->
+                <div class="cmm-category category-example6">
+                    <div class="cmm-category-all">
+                        <button class="cmm-button cmm-category-button">전체 카테고리</button>
+                    </div>
+                    <div class="cmm-category-group category-group-example6"></div>
+                </div>
+                <!-- category end -->
+            </div>
+
+            <div class="example">
+                <h5>전체 카테고리가 없을 경우</h5>
+                <!-- category start -->
+                <div class="cmm-category category-example7">
+                    <div class="cmm-category-group category-group-example7"></div>
+                </div>
+                <!-- category end -->
+            </div>
+
+        </div>
+    </main>
+
+    <!-- 기본 js -->
+    <script>
+        window.addEventListener('load', function () {
+            const categories = [
+                '카테고리1', '카테고리2', '카테고리3', '카테고리4', '카테고리5', '카테고리6', '카테고리7', '카테고리8', '카테고리9', '카테고리10', '카테고리11', '카테고리12', '카테고리13', '카테고리14', '카테고리15', '카테고리16', '카테고리17', '카테고리18', '카테고리19', '카테고리20'
+            ];
+
+            let categoryDomClassName = document.querySelector('.cmm-category > div:nth-child(1)');
+            let categoryChildrenDiv = document.querySelector(".cmm-category").children;
+            
+
+            // width, padding 동적으로 계산
+            let buttonWidth = (1 / categories.length);
+            let buttonPadding = (1 - buttonWidth) / categories.length;
+
+            const categoryGroupItemDomString = categories.map((cate) => {
+                // 좌:전체 카테고리 우:카테고리 그룹
+                if (categoryDomClassName.className != "cmm-category-group") {
+                    // 카테고리 그룹 버튼이 한개일경우
+                    if (categories.length < 2) {
+                        return `
+                        <div class="cmm-category-button-wrapper" style="width:${buttonWidth * 100}%; margin-left:10px;">
+                            <button class="cmm-button cmm-category-button">${cate}</button>
+                        </div>
+                        `;
+                    }
+
+                    return `
+                    <div class="cmm-category-button-wrapper" style="width:${buttonWidth * 100}%; padding-left: ${buttonPadding * 10}%;">
+                        <button class="cmm-button cmm-category-button">${cate}</button>
+                    </div>
+                    `;
+                }
+
+
+                // 전체 카테고리가 없는 경우
+                if (categoryChildrenDiv.length = 1) {
+                    return `
+                     <div class="cmm-category-button-wrapper" style="width:${buttonWidth * 100}%; padding:${buttonPadding * 10}%;">
+                        <button class="cmm-button cmm-category-button">${cate}</button>
+                    </div>
+                    `;
+                }
+
+
+                // 좌:카테고리 그룹 우:전체 카테고리
+                if (categoryDomClassName.className == "cmm-category-group") {
+                    if (categories.length < 2) {
+                        // 카테고리 그룹 버튼이 한개일 경우
+                        return `
+                         <div class="cmm-category-button-wrapper" style="width:${buttonWidth * 100}%; margin-right:10px;">
+                            <button class="cmm-button cmm-category-button">${cate}</button>
+                         </div>
+                        `;
+                    }
+
+                    return `
+                    <div class="cmm-category-button-wrapper" style="width:${buttonWidth * 100}%; padding-right: ${buttonPadding * 10}%;">
+                        <button class="cmm-button cmm-category-button">${cate}</button>
+                    </div>
+                    `;
+                }
+            });
+
+            const categoryGroupDom = document.querySelector('.cmm-category-group');
+            categoryGroupDom.innerHTML = categoryGroupItemDomString.join('');
+        });
+    </script>
+
+    <!-- 예시에 사용된 js -->
+    <script src="example-category.js"></script>
+</body>
+
+</html>

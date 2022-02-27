@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코드관리</title>
+    <link rel="stylesheet" type="text/css" href="../../../src/css/common-element.css">
+    <link rel="stylesheet" type="text/css" href="../../../src/css/common-layout.css">
+    <link rel="stylesheet" type="text/css" href="../../../src/css/common-component.css">
+    <link rel="stylesheet" type="text/css" href="../../../src/css/custom/common-code.css">
+</head>
+
+<body>
+    <main class="cmm-main">
+        <div class="cmm-w1200">
+
+            <h4 class="code-page-title"><strong>코드 관리</strong></h4>
+
+            <div class="content-wrapper cmm-align-horizontal-space">
+                <div class="list-content">
+                    <button type="button" class="cmm-button cmm-button-create">코드 등록</button>
+                    <!-- tree start -->
+                    <div class="cmm-tree" >
+                        <ul id="jsPtgTree" class="cmm-tree-item-group" >
+                            <li class="cmm-tree-item">
+                                <button class="cmm-tree-item-click">언어</button>
+
+                                <ul class="cmm-tree-item-group">
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">한국어</span>
+                                    </li>
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">중국어</span>
+                                    </li>
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">영어</span>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="cmm-tree-item">
+                                <button class="cmm-tree-item-click">갱신주기</button>
+
+                                <ul class="cmm-tree-item-group">
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">년</span>
+                                    </li>
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">분기</span>
+                                    </li>
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">월</span>
+                                    </li>
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">일</span>
+                                    </li>
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">시간</span>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="cmm-tree-item">
+                                <button class="cmm-tree-item-click">날짜형식</button>
+
+                                <ul class="cmm-tree-item-group">
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">모든날짜</span>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="cmm-tree-item">
+                                <button class="cmm-tree-item-click">공개여부</button>
+
+                                <ul class="cmm-tree-item-group">
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">공개</span>
+                                    </li>
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">비공개</span>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="cmm-tree-item">
+                                <button class="cmm-tree-item-click">정렬형식</button>
+
+                                <ul class="cmm-tree-item-group">
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">정확도</span>
+                                    </li>
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">최신순</span>
+                                    </li>
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">조회수</span>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="cmm-tree-item">
+                                <button class="cmm-tree-item-click">카테고리</button>
+
+                                <ul class="cmm-tree-item-group">
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">없음</span>
+                                    </li>
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">경제</span>
+                                    </li>
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">사회</span>
+                                    </li>
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">문화</span>
+                                    </li>
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">과학</span>
+                                    </li>
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">국가</span>
+                                    </li>
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">신용</span>
+                                    </li>
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">소비</span>
+                                    </li>
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">소득</span>
+                                    </li>
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">인구</span>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="cmm-tree-item">
+                                <button class="cmm-tree-item-click">유료여부</button>
+
+                                <ul class="cmm-tree-item-group">
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">무료</span>
+                                    </li>
+                                    <li class="cmm-tree-item">
+                                        <span class="cmm-tree-item-icon">유료</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- tree end -->
+
+                </div>
+
+                <div class="detail-content">
+                    <h6><b>상세정보</b></h6>
+
+                    <div class="code-info">
+                    <!-- form start -->
+                        <form class="cmm-form">
+                            <label class="cmm-form-label cmm-align-horizontal-space"> 
+                                <span class="cmm-form-text">코드 ID</span>
+                                <input type="text" class="cmm-input cmm-input-text" value="2ab436hnms237897653deju" readonly/>
+                            </label>
+                            <label class="cmm-form-label cmm-align-horizontal-space"> 
+                                <span class="cmm-form-text">코드명</span>
+                                <input type="text" class="cmm-input cmm-input-text" value="한국어" readonly />
+                            </label>
+                            <label class="cmm-form-label cmm-align-horizontal-space"> 
+                                <span class="cmm-form-date">생성 날짜 </span>
+                                <input type="date" class="cmm-input cmm-input-date" value="2021-06-02" readonly />
+                            </label>
+                        </form>
+                        <!-- form end -->
+                        
+                    </div>
+                    
+                    <div class="cmm-button-group cmm-align-horizontal-center">
+                        <button type="button" class="cmm-button cmm-button-editing">수정</button>
+                        <button type="button" class="cmm-button cmm-button-cancel">취소</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- demo용 tree js 파일 -->
+    <script src="../../component-demo/tree.js"></script>
+</body>
+
+</html>

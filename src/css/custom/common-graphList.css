@@ -1,0 +1,31 @@
+.cmm-title-panel {
+  width: 100%;
+  margin: 10px 0px 25px 0px;
+}
+.cmm-title-panel .cmm-graph-list-option {
+  max-width: 300px;
+}
+
+.cmm-thumbnail-list-item .graph-info {
+  flex: 3;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.cmm-thumbnail-list-item .graph-info > h5 {
+  margin-bottom: 10px;
+}
+.cmm-thumbnail-list-item .graph-info > span {
+  display: inline-block;
+  margin-top: 20px;
+}
+.cmm-thumbnail-list-item .graph-info .cmm-button-group {
+  justify-content: flex-end;
+  margin-top: 35px;
+}
+.cmm-thumbnail-list-item .graph-info .cmm-button-group > button {
+  margin-left: 5px;
+}
+
+.cmm-pagination {
+  margin-top: 50px;
+}

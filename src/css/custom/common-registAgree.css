@@ -1,0 +1,79 @@
+@charset "UTF-8";
+.regist-agree-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+}
+.regist-agree-wrapper label > .cmm-input-check {
+  margin-right: 5px;
+}
+.regist-agree-wrapper .cmm-button-group {
+  margin: 0 auto;
+  max-width: 120px;
+  margin-top: 30px;
+}
+.regist-agree-wrapper .cmm-button-group .cmm-agree {
+  background-color: #4472c4;
+  color: #fff;
+  border-color: #4472c4;
+}
+
+.sign-up-title {
+  width: 100%;
+  border-bottom: 1px solid #e2e2e2;
+}
+.sign-up-title > h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.sign-up-title .sign-up-step {
+  margin-bottom: 30px;
+  width: 100%;
+}
+.sign-up-title .sign-up-step li {
+  margin: 0px 8px;
+}
+.sign-up-title .sign-up-step li::after {
+  padding-left: 10px;
+  font-size: 20px;
+  content: "›";
+}
+.sign-up-title .sign-up-step li:last-child::after {
+  content: "";
+}
+.sign-up-title .sign-up-step li.selected span {
+  color: #4472c4;
+}
+.sign-up-title .sign-up-step li span b {
+  padding-right: 5px;
+}
+
+.agree-content-wrapper .agree-content {
+  margin: 30px 0px;
+}
+.agree-content-wrapper .content-title {
+  margin-bottom: 10px;
+}
+.agree-content-wrapper .content-title > h6::before {
+  font-size: 18px;
+  content: "▾";
+}
+.agree-content-wrapper .content-title > h6 span {
+  margin-left: 5px;
+  color: #4472c4;
+}
+
+.content-textarea-wrapper {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+.content-textarea-wrapper .textarea {
+  width: 100%;
+  height: 100%;
+  padding: 3px 5px;
+  font-size: 13px;
+  color: #3b3b3b;
+  overflow-y: auto;
+  box-sizing: border-box;
+}

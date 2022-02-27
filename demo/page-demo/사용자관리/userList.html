@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자 관리 | 목록</title>
+    <link rel="stylesheet" type="text/css" href="../../../src/css/common-element.css">
+    <link rel="stylesheet" type="text/css" href="../../../src/css/common-layout.css">
+    <link rel="stylesheet" type="text/css" href="../../../src/css/common-component.css">
+    <link rel="stylesheet" type="text/css" href="../../../src/css/custom/common-userList.css">
+</head>
+
+<body>
+    <main class="cmm-main">
+        <div class="cmm-w1200">
+
+            <h4><strong>사용자 목록</strong></h4>
+
+            <div class="cmm-panel cmm-align-horizontal-space">
+                <!-- search-bar start -->
+                <div class="cmm-search-bar">
+                    <select class="cmm-select cmm-search-bar-select">
+                        <option value="사회">전체</option>
+                        <option value="사회">성</option>
+                        <option value="과학">이름</option>
+                        <option value="전체">이메일</option>
+                        <option value="경제">소속기관</option>
+                    </select>
+                    <input type="search" class="cmm-input cmm-search-bar-input" />
+                    <button type="button" class="cmm-button cmm-search-bar-button">검색</button>
+                </div>
+                <!-- search-bar end -->
+
+                <div class="cmm-button-group">
+                    <button type="button" class="cmm-button cmm-button-active">활성화</button>
+                    <button type="button" class="cmm-button cmm-button-un-active">비활성화</button>
+                </div>
+            </div>
+
+            <!-- list start -->
+            <div class="cmm-list-board">
+                <ul class="cmm-list-board-head" role="row" aria-rowindex="1">
+                    <li class="cmm-list-item-column" role="columnheader">
+                        <input type="checkbox" class="cmm-input-check" />
+                    </li> 
+                    <li class="cmm-list-item-column" role="columnheader">성</li>
+                    <li class="cmm-list-item-column" role="columnheader">이름</li>
+                    <li class="cmm-list-item-column" role="columnheader">아이디</li>
+                    <li class="cmm-list-item-column" role="columnheader">가입일자</li>
+                    <li class="cmm-list-item-column" role="columnheader">소속기관</li>
+                </ul>
+
+                <div class="cmm-list-item-group">
+                    <ul class="cmm-list-item" role="row" aria-rowindex="2" aria-selected="false">
+                        <li class="cmm-list-item-column" role="cell">
+                            <input type="checkbox" class="cmm-input-check" />
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">홍</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">길동</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">honggildong@gmail.com</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">2021-05-26</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">없음</a>
+                        </li>
+                    </ul>
+                    <ul class="cmm-list-item" role="row" aria-rowindex="3" aria-selected="true">
+                        <li class="cmm-list-item-column" role="cell">
+                            <input type="checkbox" class="cmm-input-check" checked/>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">홍</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">길동</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">honggildong@gmail.com</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">2021-05-26</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">없음</a>
+                        </li>
+                    </ul>
+                    <ul class="cmm-list-item" role="row" aria-rowindex="4" aria-selected="false">
+                        <li class="cmm-list-item-column" role="cell">
+                            <input type="checkbox" class="cmm-input-check" />
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">홍</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">길동</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">honggildong@gmail.com</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">2021-05-26</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">없음</a>
+                        </li>
+                    </ul>
+                    <ul class="cmm-list-item" role="row" aria-rowindex="5" aria-selected="false">
+                        <li class="cmm-list-item-column" role="cell">
+                            <input type="checkbox" class="cmm-input-check" />
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">홍</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">길동</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">honggildong@gmail.com</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">2021-05-26</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">없음</a>
+                        </li>
+                    </ul>
+                    <ul class="cmm-list-item" role="row" aria-rowindex="6" aria-selected="false">
+                        <li class="cmm-list-item-column" role="cell">
+                            <input type="checkbox" class="cmm-input-check" />
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">홍</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">길동</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">honggildong@gmail.com</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">2021-05-26</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">없음</a>
+                        </li>
+                    </ul>
+                    <ul class="cmm-list-item" role="row" aria-rowindex="7" aria-selected="false">
+                        <li class="cmm-list-item-column" role="cell">
+                            <input type="checkbox" class="cmm-input-check" />
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">홍</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">길동</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">honggildong@gmail.com</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">2021-05-26</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">없음</a>
+                        </li>
+                    </ul>
+                    <ul class="cmm-list-item" role="row" aria-rowindex="8" aria-selected="false">
+                        <li class="cmm-list-item-column" role="cell">
+                            <input type="checkbox" class="cmm-input-check" />
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">홍</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">길동</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">honggildong@gmail.com</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">2021-05-26</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">없음</a>
+                        </li>
+                    </ul>
+                    <ul class="cmm-list-item" role="row" aria-rowindex="9" aria-selected="false">
+                        <li class="cmm-list-item-column" role="cell">
+                            <input type="checkbox" class="cmm-input-check" />
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">홍</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">길동</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">honggildong@gmail.com</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">2021-05-26</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">없음</a>
+                        </li>
+                    </ul>
+                    <ul class="cmm-list-item" role="row" aria-rowindex="10" aria-selected="false">
+                        <li class="cmm-list-item-column" role="cell">
+                            <input type="checkbox" class="cmm-input-check" />
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">홍</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">길동</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">honggildong@gmail.com</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">2021-05-26</a>
+                        </li>
+                        <li class="cmm-list-item-column" role="cell">
+                            <a href="../html/userDetail.html">없음</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- list end -->
+            
+            <!-- pagination start -->
+            <nav class="cmm-pagination">
+                <ul class="cmm-pagination-wrapper">
+                    <li class="cmm-pagination-first" aria-label="go to first page">
+                        <img src="../../../src/images/icon_prev2.svg" alt="첫번째 페이지로 이동 아이콘" />
+                    </li>
+                    <li class="cmm-pagination-prev" aria-label="go to previous page">
+                        <img src="../../../src/images/icon_prev.svg" alt="이전 아이콘" />
+                    </li>
+                    <li class="cmm-pagination-number" aria-label="go to page 1">
+                        1
+                    </li>
+                    <li class="cmm-pagination-number cmm-pagination-number-selected" aria-label="page 2">
+                        2
+                    </li>
+                    <li class="cmm-pagination-number" aria-label="go to page 3">
+                        3
+                    </li>
+                    <li class="cmm-pagination-number" aria-label="go to page 4">
+                        4
+                    </li>
+                    <li class="cmm-pagination-number" aria-label="go to page 5">
+                        5
+                    </li>
+                    <li class="cmm-pagination-number" aria-label="go to page 6">
+                        6
+                    </li>
+                    <li class="cmm-pagination-number" aria-label="go to page 7">
+                        7
+                    </li>
+                    <li class="cmm-pagination-number" aria-label="go to page 8">
+                        8
+                    </li>
+                    <li class="cmm-pagination-number" aria-label="go to page 9">
+                        9
+                    </li>
+                    <li class="cmm-pagination-number" aria-label="go to page 10">
+                        10
+                    </li>
+                    <li class="cmm-pagination-next" aria-label="go to next page">
+                        <img src="../../../src/images/icon_next.svg" alt="다음 아이콘" />
+                    </li>
+                    <li class="cmm-pagination-last" aria-label="go to last page">
+                        <img src="../../../src/images/icon_next2.svg" alt="마지막 페이지로 이동 아이콘" />
+                    </li>
+                </ul>
+            </nav>
+            <!-- pagination end -->
+        </div>
+    </main>
+</body>
+
+</html>

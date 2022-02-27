@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 포인트 통계</title>
+    <link rel="stylesheet" type="text/css" href="../../../src/css/common-element.css">
+    <link rel="stylesheet" type="text/css" href="../../../src/css/common-layout.css">
+    <link rel="stylesheet" type="text/css" href="../../../src/css/common-component.css">
+    <link rel="stylesheet" type="text/css" href="../../../src/css/custom/common-pointStats.css">
+</head>
+
+<body>
+    <main class="cmm-main">
+        <div class="cmm-w1200">
+
+            <h4><strong>내 포인트 통계</strong></h4>
+
+            <div class="cmm-status-board cmm-align-horizontal-space">
+                <div class="cmm-status-board-graph">
+                    <img src="./status-board-graph.png" alt="임시 그래프 이미지" />
+                </div>
+                <div class="cmm-status-board-graph">
+                    <img src="./status-board-graph.png" alt="임시 그래프 이미지" />
+                </div>
+                <div class="cmm-status-board-graph">
+                    <img src="./status-board-graph.png" alt="임시 그래프 이미지" />
+                </div>
+            </div>
+
+            <!-- search-bar start -->
+            <div class="cmm-search-bar">
+                <select class="cmm-select cmm-search-bar-select">
+                    <option value="전체">전체</option>
+                    <option value="내용">내용</option>
+                    <option value="구분">구분</option>
+                </select>
+                <input type="search" class="cmm-input cmm-search-bar-input" />
+                <button type="button" class="cmm-button cmm-search-bar-button">검색</button>
+            </div>
+            <!-- search-bar end -->
+
+            <!-- table start -->
+            <table class="cmm-table-board">
+                <thead>
+                    <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">일시</th>
+                        <th scope="col">포인트 내용</th>
+                        <th scope="col">포인트</th>
+                        <th scope="col">구분</th>
+                        <th scope="col">누적 포인트</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>2021-05-28 14:38:55</td>
+                        <td>그래프 다운로드</td>
+                        <td>300</td>
+                        <td>차감</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>2021-05-30 14:38:55</td>
+                        <td>광고시청</td>
+                        <td>100</td>
+                        <td>지급</td>
+                        <td>250</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>2021-05-28 14:38:55</td>
+                        <td>그래프 다운로드</td>
+                        <td>300</td>
+                        <td>차감</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>2021-05-30 14:38:55</td>
+                        <td>광고시청</td>
+                        <td>100</td>
+                        <td>지급</td>
+                        <td>250</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>2021-05-28 14:38:55</td>
+                        <td>그래프 다운로드</td>
+                        <td>300</td>
+                        <td>차감</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>2021-05-30 14:38:55</td>
+                        <td>광고시청</td>
+                        <td>100</td>
+                        <td>지급</td>
+                        <td>250</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>2021-05-28 14:38:55</td>
+                        <td>그래프 다운로드</td>
+                        <td>300</td>
+                        <td>차감</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>2021-05-30 14:38:55</td>
+                        <td>광고시청</td>
+                        <td>100</td>
+                        <td>지급</td>
+                        <td>250</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>2021-05-28 14:38:55</td>
+                        <td>그래프 다운로드</td>
+                        <td>300</td>
+                        <td>차감</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td>2021-05-30 14:38:55</td>
+                        <td>광고시청</td>
+                        <td>100</td>
+                        <td>지급</td>
+                        <td>250</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- table end -->
+
+            <!-- pagination start -->
+            <nav class="cmm-pagination">
+                <ul class="cmm-pagination-wrapper">
+                    <li class="cmm-pagination-first" aria-label="go to first page">
+                        <img src="../../../src/images/icon_prev2.svg" alt="첫번째 페이지로 이동 아이콘" />
+                    </li>
+                    <li class="cmm-pagination-prev" aria-label="go to previous page">
+                        <img src="../../../src/images/icon_prev.svg" alt="이전 아이콘" />
+                    </li>
+                    <li class="cmm-pagination-number" aria-label="go to page 1">
+                        1
+                    </li>
+                    <li class="cmm-pagination-number cmm-pagination-number-selected" aria-label="page 2">
+                        2
+                    </li>
+                    <li class="cmm-pagination-number" aria-label="go to page 3">
+                        3
+                    </li>
+                    <li class="cmm-pagination-number" aria-label="go to page 4">
+                        4
+                    </li>
+                    <li class="cmm-pagination-number" aria-label="go to page 5">
+                        5
+                    </li>
+                    <li class="cmm-pagination-number" aria-label="go to page 6">
+                        6
+                    </li>
+                    <li class="cmm-pagination-number" aria-label="go to page 7">
+                        7
+                    </li>
+                    <li class="cmm-pagination-number" aria-label="go to page 8">
+                        8
+                    </li>
+                    <li class="cmm-pagination-number" aria-label="go to page 9">
+                        9
+                    </li>
+                    <li class="cmm-pagination-number" aria-label="go to page 10">
+                        10
+                    </li>
+                    <li class="cmm-pagination-next" aria-label="go to next page">
+                        <img src="../../../src/images/icon_next.svg" alt="다음 아이콘" />
+                    </li>
+                    <li class="cmm-pagination-last" aria-label="go to last page">
+                        <img src="../../../src/images/icon_next2.svg" alt="마지막 페이지로 이동 아이콘" />
+                    </li>
+                </ul>
+            </nav>
+            <!-- pagination end -->
+        </div>
+    </main>
+</body>
+
+</html>

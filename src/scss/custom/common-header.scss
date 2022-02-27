@@ -1,0 +1,82 @@
+header.cmm-header {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.header-content-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+
+.cmm-logo {
+  width: 130px;
+  > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    > img {
+      width: 100%;
+    }
+  }
+}
+
+.cmm-gnb {
+  width: 100%;
+  max-width: 40%;
+  height: 100%;
+  > ul {
+    width: 100%;
+    height: 100%;
+    > li {
+      width: 200px;
+      height: 100%;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+#login {
+  width: 130px;
+  display: flex;
+  justify-content: flex-end;
+  #login-button {
+    border-color: #4188ea;
+    background-color: #4188ea;
+    color: #fff;
+  }
+}
+
+// 하위 메뉴가 있을 경우의 gnb bg 영역
+// .cmm-gnb-bg {
+//   position: absolute;
+//   top: -150px;
+//   left: 0;
+//   z-index: 10;
+//   width: 100%;
+//   height: 200px;
+//   background-color: #fff;
+//   border-bottom: 1px solid #ccc;
+//   box-sizing: border-box;
+//   transition: all 0.3s;
+//   visibility: hidden;
+// }

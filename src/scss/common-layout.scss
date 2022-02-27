@@ -1,0 +1,86 @@
+// main container style
+main.cmm-main {
+  width: 100%;
+}
+
+.cmm-w1200 {
+  width: 100%;
+  padding: 30px 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.cmm-w1600 {
+  width: 100%;
+  padding: 30px 10px;
+  max-width: 1600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+// 레이아웃 가로 정렬 (기본)
+.cmm-align-horizontal-left {
+  display: flex;
+  align-items: center;
+}
+
+// 레이아웃 가로 정렬 (각각 양 끝에 맞춤)
+.cmm-align-horizontal-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// 레이아웃 가로 정렬 (가운데)
+.cmm-align-horizontal-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+// 레이아웃 세로 정렬 (가운데)
+.cmm-align-vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+// input group 간격 조정
+.cmm-input-group > input,
+.cmm-input-group > textarea,
+.cmm-input-group > div {
+  margin-bottom: 10px;
+}
+
+.cmm-input-group-horizontal > input {
+  margin: 0px 5px;
+}
+
+// input group 가로 정렬
+.cmm-input-group-horizontal {
+  display: flex;
+  align-items: center;
+}
+
+// form 가로정렬
+.cmm-form-horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+// form 간격 조정
+.cmm-form input,
+.cmm-form textarea,
+.cmm-form > .cmm-form-group {
+  margin-bottom: 10px;
+}
+
+.cmm-form input[type="checkbox"],
+.cmm-form input[type="radio"] {
+  margin-bottom: 0;
+  margin-right: 3px;
+}

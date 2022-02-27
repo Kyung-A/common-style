@@ -1,0 +1,67 @@
+header.cmm-header {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.header-content-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+
+.cmm-logo {
+  width: 130px;
+}
+.cmm-logo > a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.cmm-logo > a > img {
+  width: 100%;
+}
+
+.cmm-gnb {
+  width: 100%;
+  max-width: 40%;
+  height: 100%;
+}
+.cmm-gnb > ul {
+  width: 100%;
+  height: 100%;
+}
+.cmm-gnb > ul > li {
+  width: 200px;
+  height: 100%;
+}
+.cmm-gnb > ul > li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+}
+
+#login {
+  width: 130px;
+  display: flex;
+  justify-content: flex-end;
+}
+#login #login-button {
+  border-color: #4188ea;
+  background-color: #4188ea;
+  color: #fff;
+}

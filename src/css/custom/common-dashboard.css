@@ -1,0 +1,54 @@
+.status-board-count-wrapper {
+  flex-wrap: wrap;
+}
+.status-board-count-wrapper .board-count {
+  width: 100%;
+  max-width: 380px;
+  padding: 30px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  box-sizing: border-box;
+}
+.status-board-count-wrapper .board-count .board-title {
+  margin-bottom: 30px;
+}
+.status-board-count-wrapper .board-count .count {
+  color: dodgerblue;
+  font-weight: bold;
+}
+
+.cmm-status-board-wrapper {
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+  height: 500px;
+}
+.cmm-status-board-wrapper .board-text {
+  width: 100%;
+  max-width: 380px;
+  height: 100%;
+  text-align: center;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.cmm-status-board-wrapper .board-text .board-title {
+  margin: 30px;
+}
+.cmm-status-board-wrapper .board-text .cmm-table-board {
+  border: 0;
+}
+.cmm-status-board-wrapper .board-graph {
+  width: 100%;
+  max-width: 780px;
+  height: 100%;
+  text-align: center;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.cmm-status-board-wrapper .board-graph .board-title {
+  margin: 30px;
+}
+.cmm-status-board-wrapper .board-graph img {
+  width: 70%;
+}

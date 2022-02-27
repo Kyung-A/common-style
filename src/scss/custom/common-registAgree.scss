@@ -1,0 +1,84 @@
+.regist-agree-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  label {
+    > .cmm-input-check {
+      margin-right: 5px;
+    }
+  }
+  .cmm-button-group {
+    margin: 0 auto;
+    max-width: 120px;
+    margin-top: 30px;
+    .cmm-agree {
+      background-color: #4472c4;
+      color: #fff;
+      border-color: #4472c4;
+    }
+  }
+}
+
+.sign-up-title {
+  width: 100%;
+  border-bottom: 1px solid #e2e2e2;
+  > h3 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .sign-up-step {
+    margin-bottom: 30px;
+    width: 100%;
+    li {
+      margin: 0px 8px;
+      &::after {
+        padding-left: 10px;
+        font-size: 20px;
+        content: "›";
+      }
+      &:last-child::after {
+        content: "";
+      }
+      &.selected span {
+        color: #4472c4;
+      }
+      span b {
+        padding-right: 5px;
+      }
+    }
+  }
+}
+
+.agree-content-wrapper {
+  .agree-content {
+    margin: 30px 0px;
+  }
+  .content-title {
+    margin-bottom: 10px;
+    > h6 {
+      &::before {
+        font-size: 18px;
+        content: "▾";
+      }
+      span {
+        margin-left: 5px;
+        color: #4472c4;
+      }
+    }
+  }
+}
+
+.content-textarea-wrapper {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  .textarea {
+    width: 100%;
+    height: 100%;
+    padding: 3px 5px;
+    font-size: 13px;
+    color: rgb(59, 59, 59);
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+}
